@@ -11,7 +11,7 @@ const clear = document.querySelector('#clear');
 
 const colors = [red, orange, yellow, green, blue, indigo, violet, black, white];
 const canva = document.querySelector('.canva');
-const lengthOfCanva = 400;
+const lengthOfCanva = 512;
 
 let color = "white";
 let graphContainer = [];
@@ -20,7 +20,7 @@ let graphBox = [];
 //initialize
 firstDiv = document.createElement('div');
 firstDiv.setAttribute('class', 'graphBox');
-firstDiv.style.cssText = [`height: 400px; width: 400px;`];
+firstDiv.style.cssText = [`height: ${lengthOfCanva}px; width: ${lengthOfCanva}px;`];
 firstDiv.addEventListener("mouseover", (e) => addColor(e));
 canva.appendChild(firstDiv);
 
